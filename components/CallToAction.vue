@@ -16,7 +16,7 @@ export default {};
 
 <style scoped>
 .ctaWrapper {
-  @apply w-1/2 h-auto p-10 flex flex-col gap-2 bg-mainThree rounded-md text-center shadow-2xl text-gray-200;
+  @apply w-1/2 h-auto p-10 flex flex-col gap-2 bg-mainThree rounded-md text-center shadow-2xl bg-opacity-30 text-gray-200;
 }
 
 .heroHeader {
