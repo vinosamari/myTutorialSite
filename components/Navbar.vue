@@ -19,11 +19,11 @@ export default {};
 
 <style scoped>
 .nav {
-  @apply bg-secondaryOne flex items-center px-10 justify-between text-xl font-bold text-center py-4 tracking-wider h-[10vh] fixed w-full;
+  @apply bg-secondaryOne flex items-center px-20 justify-between text-xl font-bold text-center py-4 tracking-wider h-[10vh] fixed w-full transition-all duration-500;
 }
 
 .navLink {
   padding: 10px 20px;
-  @apply bg-mainFour text-gray-300 mx-4 transition-all duration-500 transform hover:bg-opacity-10 hover:text-gray-100 rounded-md;
+  @apply bg-mainFour text-gray-300 mx-4 border-mainFour transition-all duration-500 transform hover:bg-opacity-10  hover:border-mainThree hover:text-gray-100 rounded-md text-sm;
 }
 </style>
