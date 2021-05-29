@@ -1,7 +1,7 @@
 <template>
-  <div class="wrapper">
-    <hero-card></hero-card>
-    <call-to-action></call-to-action>
+  <div class="mainWrapper">
+    <hero-card class="💪🏼"></hero-card>
+    <call-to-action class="☎️"></call-to-action>
   </div>
 </template>
 
@@ -19,7 +19,11 @@ export default {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.wrapper {
+.mainWrapper {
   @apply flex flex-col gap-10 bg-mainFour justify-center py-20 items-center h-full text-white;
+}
+.💪🏼 {
+}
+.☎️ {
 }
 </style>

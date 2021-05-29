@@ -23,7 +23,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    "nuxt-vite"
+    // "nuxt-vite",
+    "nuxt-animejs"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -31,7 +32,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    "nuxt-vue-select"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
