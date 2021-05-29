@@ -6,6 +6,7 @@
 export default {};
 </script>
 
+
 <style  scoped>
 .mainDiv {
   min-height: 100vh;
@@ -13,4 +14,3 @@ export default {};
   justify-content: center;
   align-items: center;
 }
-</style>

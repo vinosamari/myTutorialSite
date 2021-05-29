@@ -22,7 +22,8 @@ module.exports = {
         secondaryFour: "#30C5D2"
       },
       fontFamily: {
-        mono: ["Fira Code"]
+        mono: ["Fira Code"],
+        customOne: ["Montserrat"]
       }
     }
   },

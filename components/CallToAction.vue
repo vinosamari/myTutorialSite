@@ -1,7 +1,7 @@
 <template>
   <section class="ctaWrapper">
-    <h1 class="heroHeader">Learn Something New Today!</h1>
-    <p class="heroBody">
+    <h1 class="ctaHeader">Learn Something New Today!</h1>
+    <p class="ctaBody">
       Try out a course, watch a video, read a blog post and experience learning
       tailored just for you
     </p>
@@ -15,18 +15,20 @@ export default {};
 
 <style scoped>
 .ctaWrapper {
-  @apply w-1/2 h-auto p-10 flex cursor-default flex-col gap-2 bg-mainThree rounded-md text-center shadow-2xl bg-opacity-30 text-gray-200 hover:bg-opacity-70 transition-all duration-500;
+  @apply w-1/2 h-auto p-10 flex flex-col gap-2 bg-mainThree rounded-md text-center shadow-2xl bg-opacity-30 text-gray-200 hover:bg-opacity-80 transition-all duration-300;
 }
 
-.heroHeader {
+.ctaHeader {
   @apply text-3xl tracking-widest mb-4 font-bold;
 }
 
-.heroBody {
-  @apply text-lg font-extralight text-center text-gray-200;
+.ctaBody {
+  font-family: "Montserrat";
+  @apply text-lg font-extralight text-center capitalize tracking-wide
+    text-gray-200;
 }
 
 .ctaBtn {
-  @apply px-4 tracking-widest hover:bg-mainThree w-1/2 mx-auto transition-all transform hover:scale-125 duration-500 py-2 mt-5 rounded-xl bg-secondaryOne capitalize shadow-2xl animate-pulse;
+  @apply tracking-widest px-4 border-0 hover:border-0 hover:bg-mainThree mx-auto transition-all transform hover:scale-125 duration-300 py-2 mt-5 rounded-xl bg-secondaryOne capitalize shadow-2xl animate-pulse;
 }
 </style>

@@ -10,6 +10,16 @@ import HeroCard from "~/components/HeroCard.vue";
 import CallToAction from "~/components/CallToAction.vue";
 export default {
   components: { HeroCard, CallToAction },
+  data() {
+    return {
+      radioCard: "",
+    };
+  },
+  methods: {
+    radioCardfunc() {
+      console.log(this.radioCard);
+    },
+  },
 };
 </script>
 

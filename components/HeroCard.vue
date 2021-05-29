@@ -17,7 +17,7 @@ export default {};
 
 <style scoped>
 .wrapper {
-  @apply w-3/4 h-auto p-10 mt-4 flex flex-col gap-1 cursor-default bg-secondaryOne bg-opacity-10 rounded-md text-center shadow-xl font-mono hover:bg-opacity-70 transition-all duration-500 hover:shadow-inner;
+  @apply w-3/4 h-auto p-10 mt-4 flex flex-col gap-1 bg-secondaryOne bg-opacity-10 rounded-md text-center shadow-xl font-mono hover:bg-opacity-70 transition-all duration-500 hover:shadow-inner;
 }
 
 .heroHeader {
