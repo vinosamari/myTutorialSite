@@ -27,13 +27,47 @@ export default {
     "nuxt-animejs"
   ],
 
+  // Add global page transition
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+    css: false,
+
+    beforeEnter(el) {
+      this.$anime.set(el, {
+        opacity: 0
+      });
+    },
+
+    enter(el, done) {
+      this.$anime({
+        targets: el,
+        opacity: [0, 1],
+        duration: 350,
+        easing: "easeInOutSine",
+        complete: done
+      });
+    },
+
+    leave(el, done) {
+      this.$anime({
+        targets: el,
+        opacity: [1, 0],
+        duration: 350,
+        easing: "easeInOutSine",
+        complete: done
+      });
+    }
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
-    "nuxt-vue-select"
+    "nuxt-vue-select",
+    "@nuxtjs/strapi"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

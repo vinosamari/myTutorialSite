@@ -307,7 +307,7 @@
           />
         </svg>
         <p class="errorText">
-          Oops We Can't Find That Page or it has been moved.
+          Oops! We Can't Find That Page or it has been moved.
         </p>
       </div>
     </div>
@@ -520,7 +520,7 @@
           </g>
         </g>
       </svg>
-      <p class="errorText">Oops Something Went Wrong.</p>
+      <p class="errorText">Oops! Something Went Wrong.</p>
     </div>
     <NuxtLink class="homeBtn" to="/">Home page</NuxtLink>
   </div>
