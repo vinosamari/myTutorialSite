@@ -1,13 +1,26 @@
 <template>
   <div class="mainDiv">
-    <div class="coursesGrid">
-      <course-card></course-card>
+    <div v-for="course in courses" :key="course.id" class="coursesGrid">
+      <course-card :course="course"></course-card>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import CourseCard from "~/components/CourseCard.vue";
+export default {
+  components: { CourseCard },
+  data() {
+    return {
+      courses: [],
+    };
+  },
+  async fetch() {
+    this.courses = await fetch("http://localhost:1337/courses").then((res) =>
+      res.json()
+    );
+  },
+};
 </script>
 
 
@@ -17,10 +30,6 @@ export default {};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
   @apply bg-mainFour;
-  .coursesGrid {
-    @apply grid grid-cols-3 gap-10;
-  }
 }
 </style>
