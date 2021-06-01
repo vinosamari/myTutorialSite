@@ -1,13 +1,11 @@
 <template>
   <section class="wrapper">
-    <h1 class="heroHeader">TODAY'S TECH TIP</h1>
-    <h2 class="heroSubheader">Be curious and maintain a learning mindset.</h2>
+    <h1 class="heroHeader">Learn Something New Today!</h1>
     <p class="heroBody">
-      Curiosity is the key to innovation and it will turn you into a great
-      problem-solver. As professionals, you must maintain a learning mindset and
-      keep your knowledge and skills up-to-date with rapidly-changing technology
-      trends.
+      Try out a course, watch a video, read a blog post and experience learning
+      tailored just for you.
     </p>
+    <nuxt-link to="/courses" class="ctaBtn">See All Courses</nuxt-link>
   </section>
 </template>
 
@@ -21,7 +19,7 @@ export default {};
 }
 
 .heroHeader {
-  @apply text-5xl tracking-widest mb-6 mt-2 font-bold text-gray-200;
+  @apply text-5xl tracking-widest mb-6 mt-2 font-bold text-gray-200 capitalize;
 }
 
 .heroSubheader {
@@ -29,6 +27,10 @@ export default {};
 }
 
 .heroBody {
-  @apply text-lg font-extralight text-center text-gray-200;
+  @apply text-lg font-extralight text-center text-gray-200 capitalize;
+}
+
+.ctaBtn {
+  @apply tracking-widest px-4 border-0 hover:border-0 hover:bg-secondaryThree mx-auto transition-all transform hover:scale-125 duration-300 py-2 mt-5 rounded-xl bg-secondaryOne capitalize shadow-2xl animate-pulse;
 }
 </style>

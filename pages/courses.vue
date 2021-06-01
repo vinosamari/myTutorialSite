@@ -27,9 +27,9 @@ export default {
 <style lang="scss" scoped>
 .mainDiv {
   min-height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
   align-items: center;
-  @apply bg-mainFour;
+  @apply bg-mainFour px-8 w-full grid-cols-3 p-8 gap-4;
 }
 </style>

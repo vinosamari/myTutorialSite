@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .card {
-  @apply flex flex-col m-10 justify-evenly h-full items-center p-8 bg-secondaryOne hover:bg-secondaryTwo text-center transform hover:scale-110 shadow-2xl duration-500  hover:cursor-pointer rounded-lg;
+  @apply flex flex-col mx-4 justify-evenly h-full items-center p-8 bg-secondaryOne hover:bg-secondaryTwo text-center transform hover:scale-110 shadow-2xl duration-500  hover:cursor-pointer rounded-lg mt-20 mb-10;
 }
 .card h1,
 .card p {
@@ -39,11 +39,11 @@ export default {
 }
 
 .courseTitle {
-  @apply text-2xl uppercase font-mono font-bold;
+  @apply text-xl uppercase font-mono font-bold;
 }
 
 .courseDescription {
-  @apply font-customOne text-base px-4;
+  @apply font-customOne capitalize text-base px-4;
 }
 
 .categories {
@@ -51,6 +51,6 @@ export default {
 }
 
 .categories p {
-  @apply font-customOne text-xs  font-semibold bg-mainOne p-2 text-white rounded-3xl;
+  @apply font-customOne text-xs  font-semibold bg-mainFour p-1 text-gray-200 rounded-3xl;
 }
 </style>

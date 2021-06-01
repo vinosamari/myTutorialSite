@@ -24,6 +24,6 @@ export default {};
 
 .navLink {
   padding: 10px 20px;
-  @apply bg-mainFour text-gray-300 mx-4 border-mainFour transition-all duration-500 transform hover:bg-opacity-10  hover:border-mainThree hover:text-gray-100 rounded-md text-sm;
+  @apply bg-mainFour text-gray-300 mx-4 border-mainFour transition-all duration-500 transform hover:bg-opacity-10  hover:border-mainThree hover:text-gray-100 rounded-md text-lg;
 }
 </style>
